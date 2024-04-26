@@ -17,40 +17,42 @@
   <!-- Site Header Start -->
   <header class="site-header" id="site-header">
     <div class="container">
-      <div class="site-header__left">
-        <a href="javascript:;">
-          <img src="images/logo/Audi-Logo_2016@2x.png" alt="">
-        </a>
-      </div>
-      <div class="site-header__right">
-        <ul>
-          <li>
-            <a href="javascript:;">Homepage</a>
-          </li>
-          <li>
-            <a href="javascript:;">About Us</a>
-            <ul>
-              <li>
-                <a href="javscript:;">Our Team</a>
-              </li>
-              <li>
-                <a href="javscript:;">Leadership</a>
-              </li>
-              <li>
-                <a href="javscript:;">Partners</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="javascript:;">Products</a>
-          </li>
-        </ul>
-        <a href="javascript:;" class="btn-main">Contact</a>
-      </div>
-      <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
+      <div class="flex--between">
+        <div class="site-header__left">
+          <a href="javascript:;">
+            <img src="images/logo/Audi-Logo_2016@2x.png" alt="">
+          </a>
+        </div>
+        <div class="site-header__right">
+          <ul class="main-navigation">
+            <li>
+              <a href="javascript:;">Homepage</a>
+            </li>
+            <li>
+              <a href="javascript:;">About Us</a>
+              <ul>
+                <li>
+                  <a href="javscript:;">Our Team</a>
+                </li>
+                <li>
+                  <a href="javscript:;">Leadership</a>
+                </li>
+                <li>
+                  <a href="javscript:;">Partners</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="javascript:;">Products</a>
+            </li>
+          </ul>
+          <a href="javascript:;" class="btn-main">Contact</a>
+        </div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </div>
   </header>
@@ -60,7 +62,7 @@
     <!-- Section Banner Slider Start -->
     <section class="banner-slider">
       <div class="banner-slider__wrapper">
-        <div class="banner-slider__box" style="background-image: url(images/images/section-banner-1920.jpg);">
+        <div class="banner-slider__box" style="background-image: url(images/images/header-img-1920.jpg);">
           <div class="container">
             <div class="banner-slider__content">
               <h1 class="page-title">
@@ -71,7 +73,7 @@
           </div>
           </div>
         </div>
-        <div class="banner-slider__box" style="background-image: url(images/images/section-banner-1920.jpg);">
+        <div class="banner-slider__box" style="background-image: url(images/images/header-img-1920.jpg);">
           <div class="container">
             <div class="banner-slider__content">
               <h1 class="page-title">
@@ -89,11 +91,11 @@
     <section class="half-img-txt">
       <div class="container">
         <div class="flex">
-          <div class="flex-half">
+          <div class="flex--half">
             <img src="images/images/about-us-section.png" alt="">
             <p>A progressive design, a powerful engine.</p>
           </div>
-          <div class="flex-half">
+          <div class="flex--half">
             <h2 class="section-title">
               <span>About Q8</span>
               Welcome to the 8th dimension. The new Audi Q8
@@ -246,45 +248,50 @@
       </div>
     </section>
     <!-- Section Products End -->
-    <!-- Section Contact Start -->
-    <section class="contact">
-      <img src="images/images/contact-form-img.png" alt="">
-      <div class="container">
-        <div class="contact__left">
-          <h2 class="section-title">
-            <span>Contact us</span>
-            If you have a questions, do not hesitate to contact us.
-          </h2>
-        </div>
-        <div class="contact__right">
-          <form action="" class="contact-form">
-            <input type="text">
-            <input type="email">
-            <textarea></textarea>
-            <button>Submit</button>
-          </form>
-        </div>
-      </div>
-    </section>
-    <!-- Section Contact End -->
   </main>
   <!-- End of Site Main Content -->
   <!-- Site Footer Start -->
   <footer class="site-footer">
-    <div class="container">
-      <div class="flex">
-        <div class="site-footer__left">
-          <p>&copy; 2020. FSD. All rights reserved</p>
+      <div class="site-footer__top">
+        <div class="contact">
+          <div class="site-footer__img">
+            <img src="images/images/contact-form-img.png" alt="">
+          </div>
+          <div class="container">
+            <div class="contact__left">
+              <h2 class="section-title">
+                <span>Contact us</span>
+                If you have a questions, do not hesitate to contact us.
+              </h2>
+            </div>
+            <div class="contact__right">
+              <form action="" class="contact-form">
+                <input type="text">
+                <input type="email">
+                <textarea></textarea>
+                <button>Submit</button>
+              </form>
+            </div>
+          </div>
         </div>
-        <div class="site-footer__right">
-          <ul>
-            <li>
-              <a href="javascript:;">Terms of agreement</a>
-            </li>
-            <li>
-              <a href="javascript:;">Privacy Policy</a>
-            </li>
-          </ul>
+      </div>
+      <div class="site-footer__bottom">
+        <div class="container">
+          <div class="flex--between">
+            <div class="site-footer__bottom-left">
+              <p>&copy; 2020. FSD. All rights reserved</p>
+            </div>
+            <div class="site-footer__bottom-right">
+              <ul>
+                <li>
+                  <a href="javascript:;">Terms of agreement</a>
+                </li>
+                <li>
+                  <a href="javascript:;">Privacy Policy</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
