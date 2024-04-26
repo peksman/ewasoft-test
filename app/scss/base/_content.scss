@@ -1,0 +1,44 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+
+}
+
+.container {
+    max-width: 1119px;
+    margin: 0 auto;
+    width: 100%;
+    @include lg-1199 {
+      max-width: 971px;
+    }
+    @include md-991 {
+      max-width: 747px;
+    }
+    @include sm-767 {
+      max-width: 550px;
+    }
+}
+
+
+.flex--between {
+  display: flex;
+  justify-content: space-between;
+}
+.flex--column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex--wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex--center {
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+

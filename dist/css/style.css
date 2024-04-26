@@ -1,0 +1,175 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a,
+button {
+  display: inline-block;
+  text-decoration: none;
+}
+a:hover, a:focus, a:visited,
+button:hover,
+button:focus,
+button:visited {
+  outline: none;
+  color: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1119px;
+  margin: 0 auto;
+  width: 100%;
+}
+@media screen and (max-width: 1199px) {
+  .container {
+    max-width: 971px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .container {
+    max-width: 747px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 550px;
+  }
+}
+
+.flex--between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex--column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex--wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex--center {
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@font-face {
+  font-family: "fonticons";
+  src: url("../scss/icons/fonticons.eot");
+  src: url("../scss/icons/fonticons.eot?#iefix") format("eot"), url("../scss/icons/fonticons.woff2") format("woff2"), url("../scss/icons/fonticons.woff") format("woff"), url("../scss/icons/fonticons.ttf") format("truetype"), url("../scss/icons/fonticons.svg#fonticons") format("svg");
+}
+.icon-twitter-brands:before, .icon-shop:before, .icon-scissors:before, .icon-paw-solid:before, .icon-instagram-brands:before, .icon-hospital-alt-solid:before, .icon-facebook-f-brands:before, .icon-dog:before, .icon-dog-training:before, .icon-chevron-up-solid:before, .icon-chevron-right-solid:before, .icon-chevron-left-solid:before, .icon-chevron-down-solid:before {
+  font-family: "fonticons";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.icon-chevron-down-solid:before {
+  content: "\e001";
+}
+
+.icon-chevron-left-solid:before {
+  content: "\e002";
+}
+
+.icon-chevron-right-solid:before {
+  content: "\e003";
+}
+
+.icon-chevron-up-solid:before {
+  content: "\e004";
+}
+
+.icon-dog-training:before {
+  content: "\e005";
+}
+
+.icon-dog:before {
+  content: "\e006";
+}
+
+.icon-facebook-f-brands:before {
+  content: "\e007";
+}
+
+.icon-hospital-alt-solid:before {
+  content: "\e008";
+}
+
+.icon-instagram-brands:before {
+  content: "\e009";
+}
+
+.icon-paw-solid:before {
+  content: "\e00a";
+}
+
+.icon-scissors:before {
+  content: "\e00b";
+}
+
+.icon-shop:before {
+  content: "\e00c";
+}
+
+.icon-twitter-brands:before {
+  content: "\e00d";
+}/*# sourceMappingURL=style.css.map */

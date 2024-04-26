@@ -1,0 +1,47 @@
+@mixin big-1921 {
+  @media screen and (max-width: 1921px) {
+      @content;
+  }
+}
+
+@mixin big-1921-min {
+  @media screen and (min-width: 1921px) {
+      @content;
+  }
+}
+
+@mixin mac-1440 {
+  @media screen and (max-width: 1440px) {
+      @content;
+  }
+}
+
+@mixin lg-1199 {
+  @media screen and (max-width: 1199px) {
+      @content;
+  }
+}
+
+@mixin md-991 {
+  @media screen and (max-width: 991px) {
+      @content;
+  }
+}
+
+@mixin sm-767 {
+  @media screen and (max-width: 767px) {
+      @content;
+  }
+}
+
+@mixin mb-555 {
+  @media screen and (max-width: 555px) {
+      @content;
+  }
+}
+
+@mixin xs-350 {
+  @media screen and (max-width: 350px) {
+      @content;
+  }
+}
