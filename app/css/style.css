@@ -173,3 +173,43 @@ html {
 .icon-twitter-brands:before {
   content: "\e00d";
 }
+
+.page-title {
+  color: #ffffff;
+  font-size: 44px;
+  text-align: left;
+  line-height: 44px;
+  font-family: "Montserrat", serif;
+  margin: 0 0 15px;
+}
+.page-title span {
+  text-transform: uppercase;
+  color: #fa2a2a;
+  font-size: 14px;
+  margin-bottom: 15px;
+  font-weight: 300;
+  display: block;
+}
+
+.section-title {
+  color: #212121;
+  font-family: "Montserrat", serif;
+  text-align: left;
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0 0 15px;
+}
+.section-title__white {
+  color: #ffffff;
+}
+.section-title__centered {
+  text-align: center;
+}
+.section-title span {
+  text-transform: uppercase;
+  color: #fa2a2a;
+  font-size: 14px;
+  margin-bottom: 15px;
+  font-weight: 300;
+  display: block;
+}

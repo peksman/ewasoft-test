@@ -1,10 +1,31 @@
+// Colors
+$white:				#ffffff;
+$black:				#000000;
+$red:               #fa2a2a;
+$silver:            #212121;
+$silver-light:      #6f6f71;
+$gray:              #333333;
+$green:             #011f05;
+
+// Fonts
+$main-font: "Montserrat", serif;
+$second-font: "Roboto Condensed", serif;
+
 // Breakpoints
 $mac: 1440px;
+$lt: 1366px;
+$ls: 1280px;
 $lg: 1199px;
+$ipd: 1024px;
 $md: 991px;
 $sm: 767px;
-$mb: 555px;
+$mb: 480px;
 $ip: 420px;
 $xs: 350px;
 
-$transition-ease: 0.4s ease-in-out;
+// transition
+$dur: 350ms;
+$ease: ease;
+
+// Container widths
+$container: 1400px;
