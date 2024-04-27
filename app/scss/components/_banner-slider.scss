@@ -3,4 +3,42 @@
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
+
+    &__wrapper {
+        height: 100%;
+    }
+
+    &__box {
+        height: 100%;
+
+        .container {
+            height: 100%;
+        }
+
+        .banner-slider__content {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            height: 100%;
+            flex-direction: column;
+            max-width: 40%;
+            width: 100%;
+            padding-top: 41px;
+
+            .page-title {
+                margin-bottom: 40px;
+            }
+
+            p {
+                border-left: 1px solid $red;
+                padding-left: 30px;
+                color: $silver-light;
+                font-family: $main-font;
+                max-width: 64%;
+                font-size: 14px;
+                line-height: 26px;
+                margin-left: 19px;
+            }
+        }
+    }
 }

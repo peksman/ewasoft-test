@@ -11,6 +11,18 @@ button,
 input,
 textarea {
   transition: $dur $ease;
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+    text-shadow: none;
+    border: none;
+  }
 }
 
 .container {

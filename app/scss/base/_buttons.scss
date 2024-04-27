@@ -1,9 +1,43 @@
 .btn-main {
     text-align: center;
-    padding: 20px 30px;
+    padding: 18px 36px;
     font-size: 14px;
     color: $white;
     font-family: $second-font;
     text-transform: uppercase;
     background-color: $silver;
+    border-radius: 3px;
+
+    &:hover {
+        background-color: $red;
+        color: $white;
+    }
+
+    &__transparent {
+        background-color: transparent;
+        border: 1px solid $silver-light;
+        color: $silver-light;
+        max-width: 125px;
+        margin: 0 auto;
+
+        &:hover {
+            background-color: $silver-light;
+            color: $white;
+        }
+    }
+}
+
+.btn-rounded {
+    background-color: rgba($red, 0.15);
+    color: $red;
+    border-radius: 25px;
+    padding: 10px 20px;
+    text-align: center;
+    font-family: $second-font;
+    font-size: 12px;
+
+    &:hover {
+        background-color: rgba($red, 1);
+        color: $white;
+    }
 }

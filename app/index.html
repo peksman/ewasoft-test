@@ -7,7 +7,10 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
   <meta charset="UTF-8">
-  <title></title>
+  <title>Ewasoft FE Test</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
   </style>
@@ -16,43 +19,41 @@
 <body>
   <!-- Site Header Start -->
   <header class="site-header" id="site-header">
-    <div class="container">
-      <div class="flex--between">
-        <div class="site-header__left">
-          <a href="javascript:;">
-            <img src="images/logo/Audi-Logo_2016@2x.png" alt="">
-          </a>
-        </div>
-        <div class="site-header__right">
-          <ul class="main-navigation">
-            <li>
-              <a href="javascript:;">Homepage</a>
-            </li>
-            <li>
-              <a href="javascript:;">About Us</a>
-              <ul>
-                <li>
-                  <a href="javscript:;">Our Team</a>
-                </li>
-                <li>
-                  <a href="javscript:;">Leadership</a>
-                </li>
-                <li>
-                  <a href="javscript:;">Partners</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="javascript:;">Products</a>
-            </li>
-          </ul>
-          <a href="javascript:;" class="btn-main">Contact</a>
-        </div>
-        <div class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+    <div class="flex--between">
+      <div class="site-header__left">
+        <a href="javascript:;">
+          <img src="images/logo/Audi-Logo_2016@2x.png" alt="">
+        </a>
+      </div>
+      <div class="site-header__right">
+        <ul class="main-navigation">
+          <li>
+            <a href="javascript:;">Homepage</a>
+          </li>
+          <li>
+            <a href="javascript:;">About Us</a>
+            <ul>
+              <li>
+                <a href="javscript:;">Our Team</a>
+              </li>
+              <li>
+                <a href="javscript:;">Leadership</a>
+              </li>
+              <li>
+                <a href="javscript:;">Partners</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:;">Products</a>
+          </li>
+        </ul>
+        <a href="javascript:;" class="btn-main">Contact us</a>
+      </div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </div>
   </header>
@@ -62,17 +63,6 @@
     <!-- Section Banner Slider Start -->
     <section class="banner-slider">
       <div class="banner-slider__wrapper">
-        <div class="banner-slider__box" style="background-image: url(images/images/header-img-1920.jpg);">
-          <div class="container">
-            <div class="banner-slider__content">
-              <h1 class="page-title">
-                <span>New arrival</span>
-                Expectations put limitations on possibilities.
-              </h1>
-              <p>The Audi Q8 offers a unique performance that blends sport and utility into a momentous SUV design.</p>
-          </div>
-          </div>
-        </div>
         <div class="banner-slider__box" style="background-image: url(images/images/header-img-1920.jpg);">
           <div class="container">
             <div class="banner-slider__content">
@@ -157,9 +147,9 @@
               <h3>Audi Q3 2020</h3>
               <span>Configurator</span>
               <ul>
-                <li>Includes 300 free km</li>
-                <li>Theft Protection</li>
-                <li>Non Refundable</li>
+                <li><i class="fa-solid fa-check"></i>Includes 300 free km</li>
+                <li><i class="fa-solid fa-check"></i>Theft Protection</li>
+                <li><i class="fa-solid fa-check"></i>Non Refundable</li>
               </ul>
               <div class="four-column__slider-box--bottom_price">
                 <div class="bottom_price__left">
@@ -167,7 +157,7 @@
                   <span>29.999 &euro;</span>
                 </div>
                 <div class="bottom_price__right">
-                  <button>Buy Now</button>
+                  <button class="btn-rounded">Buy Now</button>
                 </div>
               </div>
             </div>
@@ -181,9 +171,9 @@
               <h3>Audi Q3 2020</h3>
               <span>Configurator</span>
               <ul>
-                <li>Includes 300 free km</li>
-                <li>Theft Protection</li>
-                <li>Non Refundable</li>
+                <li><i class="fa-solid fa-check"></i>Includes 300 free km</li>
+                <li><i class="fa-solid fa-check"></i>Theft Protection</li>
+                <li><i class="fa-solid fa-check"></i>Non Refundable</li>
               </ul>
               <div class="four-column__slider-box--bottom_price">
                 <div class="bottom_price__left">
@@ -191,7 +181,7 @@
                   <span>29.999 &euro;</span>
                 </div>
                 <div class="bottom_price__right">
-                  <button>Buy Now</button>
+                  <button class="btn-rounded">Buy Now</button>
                 </div>
               </div>
             </div>
@@ -205,9 +195,9 @@
               <h3>Audi Q3 2020</h3>
               <span>Configurator</span>
               <ul>
-                <li>Includes 300 free km</li>
-                <li>Theft Protection</li>
-                <li>Non Refundable</li>
+                <li><i class="fa-solid fa-check"></i>Includes 300 free km</li>
+                <li><i class="fa-solid fa-check"></i>Theft Protection</li>
+                <li><i class="fa-solid fa-check"></i>Non Refundable</li>
               </ul>
               <div class="four-column__slider-box--bottom_price">
                 <div class="bottom_price__left">
@@ -215,7 +205,7 @@
                   <span>29.999 &euro;</span>
                 </div>
                 <div class="bottom_price__right">
-                  <button>Buy Now</button>
+                  <button class="btn-rounded">Buy Now</button>
                 </div>
               </div>
             </div>
@@ -229,9 +219,9 @@
               <h3>Audi Q3 2020</h3>
               <span>Configurator</span>
               <ul>
-                <li>Includes 300 free km</li>
-                <li>Theft Protection</li>
-                <li>Non Refundable</li>
+                <li><i class="fa-solid fa-check"></i> Includes 300 free km</li>
+                <li><i class="fa-solid fa-check"></i> Theft Protection</li>
+                <li><i class="fa-solid fa-check"></i> Non Refundable</li>
               </ul>
               <div class="four-column__slider-box--bottom_price">
                 <div class="bottom_price__left">
@@ -239,7 +229,7 @@
                   <span>29.999 &euro;</span>
                 </div>
                 <div class="bottom_price__right">
-                  <button>Buy Now</button>
+                  <button class="btn-rounded">Buy Now</button>
                 </div>
               </div>
             </div>
@@ -254,23 +244,121 @@
   <footer class="site-footer">
       <div class="site-footer__top">
         <div class="contact">
-          <div class="site-footer__img">
-            <img src="images/images/contact-form-img.png" alt="">
-          </div>
           <div class="container">
+            <div class="site-footer__img">
+              <img src="images/images/contact-form-img.png" alt="">
+            </div>
             <div class="contact__left">
-              <h2 class="section-title">
+              <h2 class="section-title section-title__white">
                 <span>Contact us</span>
-                If you have a questions, do not hesitate to contact us.
+                If you have any<br> questions, don't<br> hesitate to contact us.
               </h2>
             </div>
             <div class="contact__right">
-              <form action="" class="contact-form">
-                <input type="text">
-                <input type="email">
-                <textarea></textarea>
-                <button>Submit</button>
+              <form action="" class="contact-form" id="contact-form">
+                <div class="contact-form__wrapper">
+                  <input type="text" id="text" placeholder="Your Name">
+                  <label for="text" class="form-label">Enter Your Name <span>*</span></label>
+                  <span class="error-message">This is required field.</span>
+                </div>
+                <div class="contact-form__wrapper">
+                  <input type="email" id="email" placeholder="Your Email">
+                  <label for="email" class="form-label">Enter Your Email <span>*</span></label>
+                  <span class="error-message">This is required field or wrong email format.</span>
+                </div>
+                <div class="contact-form__wrapper">
+                  <textarea id="message" placeholder="Your Message"></textarea>
+                  <label for="message" class="form-label">Your Message <span>*</span></label>
+                  <span class="error-message">This is required field.</span>
+                </div>
+                <button class="btn-main btn-main__transparent" type="submit">Submit</button>
+                <div class="contact-form__popup">
+                  <p>Thank you for your message. It has been sent.</p>
+                </div>
               </form>
+              <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                  var form = document.querySelector('.contact-form');
+                  var submitButton = form.querySelector('button[type="submit"]');
+                  var popup = document.querySelector('.contact-form__popup');
+
+                  document.getElementById("contact-form").addEventListener("submit", function(event) {
+                      event.preventDefault(); // spriječava osvježavanje stranice
+                      // Ovdje možete dodati kod za slanje forme putem AJAX-a ili slično
+                  });
+
+                  submitButton.addEventListener('click', function(event) {
+                      var inputs = form.querySelectorAll('input[type="text"], input[type="email"], textarea');
+                      var errorMessages = form.querySelectorAll('.error-message');
+
+                      errorMessages.forEach(function(errorMessage) {
+                          errorMessage.classList.remove('error-message__active');
+                      });
+
+                      var allFieldsValid = true;
+
+                      inputs.forEach(function(input) {
+                          var wrapper = input.parentElement;
+                          var errorMessage = wrapper.querySelector('.error-message');
+
+                          if (input.value.trim() === '') {
+                              errorMessage.classList.add('error-message__active');
+                              allFieldsValid = false;
+                          }
+
+                          if (input.type === 'email' && !isValidEmail(input.value.trim())) {
+                              errorMessage.classList.add('error-message__active');
+                              allFieldsValid = false;
+                          }
+                      });
+
+                      if (allFieldsValid) {
+                          popup.classList.add('success');
+                          setTimeout(function() {
+                              popup.classList.remove('success');
+                          }, 3000);
+                      }
+
+                      var errorsExist = form.querySelector('.error-message__active');
+
+                      if (errorsExist) {
+                          event.preventDefault();
+                      }
+                  });
+
+                  function isValidEmail(email) {
+                      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                      return emailRegex.test(email);
+                  }
+              });
+
+
+                document.addEventListener('DOMContentLoaded', function() {
+                  const inputs = document.querySelectorAll('.contact-form__wrapper input, .contact-form__wrapper textarea');
+
+                  inputs.forEach(input => {
+                      input.addEventListener('blur', function() {
+                          const wrapper = this.parentElement;
+                          const label = wrapper.querySelector('.form-label');
+
+                          if (this.value.trim() !== '') {
+                              label.classList.add('form-label__active');
+                          } else {
+                              label.classList.remove('form-label__active');
+                          }
+                      });
+                  });
+
+                  inputs.forEach(input => {
+                      const wrapper = input.parentElement;
+                      const label = wrapper.querySelector('.form-label');
+
+                      if (input.value.trim() !== '') {
+                          label.classList.add('form-label__active');
+                      }
+                  });
+                });
+              </script>
             </div>
           </div>
         </div>
@@ -299,6 +387,6 @@
     <!-- Site Footer End -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://kit.fontawesome.com/2ecaa790bc.js" crossorigin="anonymous"></script>
-  <script src="js/main.js"></script>
+  <script type="module" src="js/main.js"></script>
 </body>
 </html>

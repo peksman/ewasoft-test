@@ -9,6 +9,15 @@ var iconfont = require('gulp-iconfont');
 var iconfontCss = require('gulp-iconfont-css');
 var runTimestamp = Math.round(Date.now()/1000);
 var fontName = 'fonticons';
+const concat = require('gulp-concat');
+
+function scripts() {
+  return gulp.src('src/js/*.js')
+    .pipe(concat('main.js'))
+    .pipe(gulp.dest('dist/js'));
+}
+
+exports.default = scripts;
 
 
 gulp.task('sass', function(){

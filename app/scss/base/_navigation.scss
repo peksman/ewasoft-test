@@ -3,9 +3,44 @@
 
     li {
         text-transform: uppercase;
-        font-size: 16px;
+        font-size: 14px;
         position: relative;
         padding: 0 15px;
+        letter-spacing: 1px;
+        margin-left: 20px;
+
+        &:first-of-type {
+            margin-left: 0;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            right: 50%;
+            width: 0;
+            height: 1px;
+            background-color: $red;
+            transition: $dur $ease;
+        }
+
+        &:hover {
+            &::after {
+                width: 100%;
+                left: 0;
+                right: 0;
+            }
+
+            a {
+                color: $white;
+            }
+
+            ul {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
 
         a {
             color: $silver-light;
@@ -14,10 +49,38 @@
 
         ul {
             position: absolute;
-            top: 100%;
+            top: calc(100% + 10px);
             left: 0;
             display: flex;
             flex-direction: column;
+            background-color: $silver;
+            padding: 15px;
+            border: 1px solid $silver-light;
+            transition: $dur $ease;
+            opacity: 0;
+            visibility: hidden;
+
+            li {
+                margin-bottom: 15px;
+                padding: 0;
+                text-transform: capitalize;
+                border-bottom: 2px solid $silver-light;
+                padding-bottom: 15px;
+
+                &::after {
+                    display: none;
+                }
+
+                &:last-of-type {
+                    border-bottom: none;
+                    padding-bottom: 0;
+                    margin-bottom: 0;
+                }
+
+                a {
+                    color: $white;
+                }
+            }
         }
     }
 }
