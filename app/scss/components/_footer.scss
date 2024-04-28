@@ -4,18 +4,42 @@
     overflow: hidden;
     background: linear-gradient(to right, #26282d, #08090a);
 
+    @include lg-1199 {
+        padding: 100px 15px;
+    }
+
+    @include md-991 {
+        padding: 75px 15px;
+    }
+
+    @include sm-767 {
+        padding: 50px 15px 15px;
+    }
+
     .contact {
         .container {
             display: flex;
             align-items: flex-start;
             justify-content: space-between;
             position: relative;
+
+            @include sm-767 {
+                flex-direction: column;
+            }
         }
 
         &__left,
         &__right {
             max-width: 50%;
             width: 100%;
+
+            @include md-991 {
+                max-width: calc(50% - 15px);
+            }
+
+            @include sm-767 {
+                max-width: 100%;
+            }
         }
 
         &__left {
@@ -25,6 +49,25 @@
             .section-title {
                 font-size: 49px;
                 line-height: 59px;
+
+                @include lt-1366 {
+                    font-size: 39px;
+                    line-height: 49px;
+                }
+
+                @include md-991 {
+                    font-size: 32px;
+                    line-height: 42px;
+                }
+
+                @include sm-767 {
+                    font-size: 24px;
+                    line-height: 32px;
+
+                    br {
+                        display: none;
+                    }
+                }
             }
         }
     
@@ -32,6 +75,14 @@
             z-index: 10;
             position: relative;
             max-width: 455px;
+
+            @include md-991 {
+                max-width: calc(50% - 15px);
+            }
+
+            @include sm-767 {
+                max-width: 100%;
+            }
         }
     }
 
@@ -41,6 +92,10 @@
         flex-direction: column;
         padding: 26px 31px;
         position: relative;
+
+        @include md-991 {
+            padding: 0 0 15px;
+        }
 
         &__wrapper {
             position: relative;
@@ -183,6 +238,28 @@
         left: -324px;
         bottom: -75px;
         z-index: 20;
+
+        @include lg-1199 {
+            left: -524px;
+        }
+
+        @include md-991 {
+            left: 0;
+            bottom: 0;
+            max-width: 50%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        @include sm-767 {
+            max-width: 100%;
+            bottom: auto;
+            top: 0;
+            z-index: 5;
+            position: relative;
+        }
     }
 
     &__bottom {
@@ -192,21 +269,59 @@
         width: 100%;
         z-index: 50;
 
+        @include sm-767 {
+            position: relative;
+            bottom: auto;
+            display: flex;
+            margin-top: 15px;
+
+            .container > .flex--between {   
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
         &-left {
             font-family: $second-font;
             font-size: 14px;
             color: $silver-light;
             text-transform: uppercase;
+
+            @include lg-1199 {
+                padding-left: 15px;
+            }
+
+            @include sm-767 {
+                margin-bottom: 5px;
+            }
         }
 
         &-right {
+            @include lg-1199 {
+                padding-right: 15px;
+            }
+
             ul {   
                 display: flex;
+
+                @include sm-767 {
+                    flex-direction: column;
+                }
 
                 li {
                     margin-left: 15px;
                     text-transform: uppercase;
                     font-size: 14px;
+
+                    @include sm-767 {
+                        margin: 5px 0;
+                        text-align: center;
+
+                        &:last-of-type {
+                            margin-bottom: 0;
+                        }
+                    }
 
                     a {
                         color: $silver-light;

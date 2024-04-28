@@ -158,9 +158,18 @@
             left: 50%;
             transform: translate(-50%, -50%);
             border-radius: 20px;
-            background-color: $white;
             z-index: 999;
             display: flex;
+            transition: $dur $ease;
+            opacity: 0;
+            visibility: hidden;
+
+            &__active {
+                opacity: 1;
+                visibility: visible;
+                transition: $dur $ease;
+                z-index: 10001;
+            }
 
             .slider-box--popup__left {
                 max-width: 355px;
@@ -170,7 +179,7 @@
                 position: relative;
                 align-items: center;
                 padding: 35px;
-                background-color: $silver-light;
+                background-color: $silver-ultra-light;
                 border-top-left-radius: 20px;
                 border-bottom-left-radius: 20px;
 
@@ -247,6 +256,7 @@
                 padding: 30px 25px;
                 border-bottom-right-radius: 20px;
                 border-top-right-radius: 20px;
+                background-color: $white;
 
                 h5 {
                     font-family: $main-font;

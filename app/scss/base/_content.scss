@@ -3,7 +3,23 @@ html {
 }
 
 body {
+  &.body-overflow {
+    overflow: hidden;
+    transition: $dur $ease;
+    
+    &::after {
+      content: '';
+      background-color: rgba($black, 0.5);
+      position: fixed;
+      transition: $dur $ease;
+      inset: 0;
+      z-index: 10000;
+    }
+  }
 
+  &.body__locked {
+    overflow: hidden;
+  }
 }
 
 a,
@@ -30,7 +46,7 @@ textarea {
     margin: 0 auto;
     width: 100%;
     @include lg-1199 {
-      max-width: 971px;
+      max-width: 100%;
     }
 }
 

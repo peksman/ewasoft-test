@@ -1,6 +1,10 @@
 .main-navigation {
     display: flex;
 
+    @include lg-1199 {
+        flex-direction: column;
+    }
+
     li {
         text-transform: uppercase;
         font-size: 14px;
@@ -8,15 +12,27 @@
         padding: 0 15px;
         letter-spacing: 1px;
         margin-left: 20px;
+        text-align: center;
+
+        @include lg-1199 {
+            margin: 0 0 25px;
+            font-size: 16px;
+        }
 
         &:first-of-type {
             margin-left: 0;
         }
 
+        &.menu-item__has-children {
+            &::after {
+                display: none;
+            }
+        }
+
         &::after {
             content: '';
             position: absolute;
-            bottom: -10px;
+            bottom: -16px;
             left: 50%;
             right: 50%;
             width: 0;
@@ -25,11 +41,31 @@
             transition: $dur $ease;
         }
 
+        &.menu-item__active {
+            a {
+                color: $white;
+            }
+
+            &::after {
+                width: 100%;
+                left: 0;
+                right: 0;
+
+                @include lg-1199 {
+                    display: none;
+                }
+            }
+        }
+
         &:hover {
             &::after {
                 width: 100%;
                 left: 0;
                 right: 0;
+
+                @include lg-1199 {
+                    display: none;
+                }
             }
 
             a {
@@ -39,6 +75,7 @@
             ul {
                 opacity: 1;
                 visibility: visible;
+                border-top-color: $red;
             }
         }
 
@@ -49,23 +86,25 @@
 
         ul {
             position: absolute;
-            top: calc(100% + 10px);
+            top: calc(100% + 16px);
             left: 0;
             display: flex;
             flex-direction: column;
             background-color: $silver;
-            padding: 15px;
+            padding: 18px 15px;
             border: 1px solid $silver-light;
             transition: $dur $ease;
             opacity: 0;
             visibility: hidden;
+            min-width: 140px;
 
             li {
-                margin-bottom: 15px;
+                margin: 0 0 15px;
                 padding: 0;
                 text-transform: capitalize;
                 border-bottom: 2px solid $silver-light;
                 padding-bottom: 15px;
+                font-size: 12px;
 
                 &::after {
                     display: none;
@@ -79,6 +118,28 @@
 
                 a {
                     color: $white;
+                }
+            }
+
+            @include lg-1199 {
+                background-color: $black;
+                border: none;
+                min-width: auto;
+                opacity: 1;
+                visibility: visible;
+                position: relative;
+                top: 0;
+                padding: 0;
+                margin-top: 15px;
+                text-align: center;
+
+                li {
+                    border-bottom: 0;
+                    padding-bottom: 0;
+
+                    a {
+                        color: $silver-light;
+                    }
                 }
             }
         }

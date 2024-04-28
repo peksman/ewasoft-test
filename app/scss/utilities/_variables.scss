@@ -4,6 +4,7 @@ $black:				#000000;
 $red:               #fa2a2a;
 $silver:            #212121;
 $silver-light:      #6f6f71;
+$silver-ultra-light:#f1f1f5;
 $gray:              #333333;
 $green:             #011f05;
 $purple:            #962afa;
@@ -30,3 +31,10 @@ $ease: ease;
 
 // Container widths
 $container: 1140px;
+
+
+.banner-slider,
+.banner-img,
+.four-column {
+    display: none;
+}

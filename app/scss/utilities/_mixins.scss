@@ -16,6 +16,12 @@
   }
 }
 
+@mixin lt-1366 {
+  @media screen and (max-width: 1366px) {
+      @content;
+  }
+}
+
 @mixin lg-1199 {
   @media screen and (max-width: 1199px) {
       @content;

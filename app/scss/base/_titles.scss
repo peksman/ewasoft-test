@@ -28,6 +28,11 @@
     letter-spacing: -0.6px;
     margin: 0 0 15px;
 
+    @include lt-1366 {
+        font-size: 36px;
+        line-height: 45px;
+    }
+
     &__white {
         color: $white;
     }
