@@ -135,6 +135,16 @@
 
         .btn-main__transparent {
             margin-top: 10px;
+
+            &:focus {
+                border: 1px solid $silver-light;
+                color: $silver-light;
+            }
+
+            &:focus-visible {
+                outline: none;
+                border: 1px solid $silver-light;
+            }
         }
 
         .contact-form__popup {

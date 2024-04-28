@@ -161,6 +161,52 @@
                 </div>
               </div>
             </div>
+            <div class="four-column__slider-box--popup">
+              <div class="slider-box--popup__left">
+                <div class="slider-box--popup__left-img">
+                  <span class="slider-box--popup__left-notice">new</span>
+                  <img src="images/products/product-card-audi-q7.png" alt="">
+                </div>
+                <span class="slider-box--popup__left-info">5 Seats, 4 doors</span>
+                <h4>Audi Q7 2020</h4>
+                <a href="javascript:;">
+                  Starting from
+                  <span class="calculate-price">39.999</span>
+                </a>
+              </div>
+              <div class="slider-box--popup__right">
+                <h5>Audi Configurator</h5>
+                <p>Create your own audi.</p>
+                <div class="popup__right-list">
+                  <div class="popup__right-list--box">  
+                    <input type="checkbox" name="checkbox"/>
+                    <p>48-V electrical system</p>
+                    <span class="calculate-price--value">0</span>
+                  </div>
+                  <div class="popup__right-list--box">
+                    <input type="checkbox" name="checkbox" />
+                    <p>48-V electrical system</p>
+                    <span class="calculate-price--value">278,60</span>
+                  </div>
+                  <div class="popup__right-list--box">
+                    <input type="checkbox" name="checkbox" />
+                    <p>48-V electrical system</p>
+                    <span class="calculate-price--value">558,78</span>
+                  </div>
+                  <div class="popup__right-list--box">
+                    <input type="checkbox" name="checkbox" />
+                    <p>48-V electrical system</p>
+                    <span class="calculate-price--value">357,29</span>
+                  </div>
+                  <div class="popup__right-list--box">
+                    <input type="checkbox" name="checkbox" />
+                    <p>48-V electrical system</p>
+                    <span class="calculate-price--value">637,48</span>
+                  </div>
+                </div>
+              </div>
+              <span class="slider-box--popup__close"></span>
+            </div>
           </div>
           <div class="four-column__slider-box">
             <div class="four-column__slider-box--top">
@@ -188,6 +234,7 @@
           </div>
           <div class="four-column__slider-box">
             <div class="four-column__slider-box--top">
+              <span>new</span>
               <img src="images/products/product-card-audi-a3.png" alt="">
             </div>
             <div class="four-column__slider-box--bottom">
@@ -212,6 +259,7 @@
           </div>
           <div class="four-column__slider-box">
             <div class="four-column__slider-box--top">
+              <span>new</span>
               <img src="images/products/product-card-audi-a3.png" alt="">
             </div>
             <div class="four-column__slider-box--bottom">
@@ -237,6 +285,32 @@
         </div>
       </div>
     </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const checkboxes = document.querySelectorAll('.popup__right-list--box input[type="checkbox"]');
+            const calculatePrice = document.querySelector('.calculate-price');
+
+            function formatNumber(number) {
+                return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+            }
+
+            checkboxes.forEach(function (checkbox) {
+                checkbox.addEventListener('change', function () {
+                    const span = this.parentElement.querySelector('.calculate-price--value');
+                    let price = parseFloat(span.textContent.replace(',', '.'));
+                    let total = parseFloat(calculatePrice.textContent.replace('.', '').replace(',', ''));
+
+                    if (this.checked) {
+                        total += price;
+                    } else {
+                        total -= price;
+                    }
+
+                    calculatePrice.textContent = formatNumber(total.toFixed(2));
+                });
+            });
+        });
+    </script>
     <!-- Section Products End -->
   </main>
   <!-- End of Site Main Content -->
@@ -283,8 +357,7 @@
                   var popup = document.querySelector('.contact-form__popup');
 
                   document.getElementById("contact-form").addEventListener("submit", function(event) {
-                      event.preventDefault(); // spriječava osvježavanje stranice
-                      // Ovdje možete dodati kod za slanje forme putem AJAX-a ili slično
+                      event.preventDefault();
                   });
 
                   submitButton.addEventListener('click', function(event) {
@@ -312,8 +385,16 @@
                           }
                       });
 
+                      var labels = document.querySelectorAll(".form-label");
+                          
                       if (allFieldsValid) {
                           popup.classList.add('success');
+                          document.getElementById("text").value = "";
+                          document.getElementById("email").value = "";
+                          document.getElementById("message").value = "";
+                          labels.forEach(function(label) {
+                            label.classList.remove("form-label__active");
+                        });
                           setTimeout(function() {
                               popup.classList.remove('success');
                           }, 3000);
@@ -330,7 +411,7 @@
                       var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
                       return emailRegex.test(email);
                   }
-              });
+                });
 
 
                 document.addEventListener('DOMContentLoaded', function() {
