@@ -916,6 +916,33 @@ i:focus {
   }
 }
 
+.error-wrapper {
+  height: 100vh;
+  background-color: #212121;
+  font-family: "Montserrat", serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.error-wrapper .page-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.error-wrapper p {
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+.error-wrapper .btn-main {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+.error-wrapper .btn-main:hover {
+  background-color: #ffffff;
+  color: #212121;
+}
+
 .banner-slider {
   height: 720px;
   position: relative;
@@ -1851,4 +1878,8 @@ i:focus {
   font-size: 14px;
   text-align: center;
   font-style: italic;
+}
+
+.entry-content {
+  padding: 100px 0;
 }

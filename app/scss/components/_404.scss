@@ -1,0 +1,30 @@
+.error-wrapper {
+    height: 100vh;
+    background-color: $silver;
+    font-family: $main-font;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    .page-title {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    p {
+        margin-bottom: 30px;
+        color: $white;
+    }
+
+    .btn-main {
+        border: 1px solid $white;
+        color: $white;
+
+        &:hover {
+            background-color: $white;
+            color: $silver;
+        }
+    }
+}
