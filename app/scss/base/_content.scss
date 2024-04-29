@@ -25,7 +25,8 @@ body {
 a,
 button,
 input,
-textarea {
+textarea,
+i {
   transition: $dur $ease;
   border: none;
 

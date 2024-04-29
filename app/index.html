@@ -8,9 +8,9 @@
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
   <meta charset="UTF-8">
   <title>Ewasoft FE Test</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
   </style>
@@ -74,6 +74,25 @@
           </div>
           </div>
         </div>
+        <div class="banner-slider__box" style="background-image: url(images/images/header-img-1920.jpg);">
+          <div class="container">
+            <div class="banner-slider__content">
+              <h1 class="page-title">
+                <span>New arrival</span>
+                Expectations put limitations on possibilities.
+              </h1>
+              <p>The Audi Q8 offers a unique performance that blends sport and utility into a momentous SUV design.</p>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="banner-slider__arrows">
+        <span class="custom-prev-arrow">
+          <i class="fa-solid fa-angle-right"></i>
+        </span>
+        <span class="custom-next-arrow">
+          <i class="fa-solid fa-angle-left"></i>
+        </span>
       </div>
     </section>
     <!-- Section Banner Slider End -->
@@ -145,7 +164,7 @@
             <div class="four-column__slider-box--bottom">
               <span>5 Seats, 4 Doors</span>
               <h3>Audi Q3 2020</h3>
-              <span>Configurator</span>
+              <button class="price-popup">configurator</button>
               <ul>
                 <li><i class="fa-solid fa-check"></i>Includes 300 free km</li>
                 <li><i class="fa-solid fa-check"></i>Theft Protection</li>
@@ -215,7 +234,7 @@
             <div class="four-column__slider-box--bottom">
               <span>5 Seats, 4 Doors</span>
               <h3>Audi A4 2020</h3>
-              <span>Configurator</span>
+              <button class="price-popup">configurator</button>
               <ul>
                 <li><i class="fa-solid fa-check"></i>Includes 300 free km</li>
                 <li><i class="fa-solid fa-check"></i>Theft Protection</li>
@@ -286,7 +305,7 @@
             <div class="four-column__slider-box--bottom">
               <span>5 Seats, 4 Doors</span>
               <h3>Audi A3 2020</h3>
-              <span>Configurator</span>
+              <button class="price-popup">configurator</button>
               <ul>
                 <li><i class="fa-solid fa-check"></i>Includes 300 free km</li>
                 <li><i class="fa-solid fa-check"></i>Theft Protection</li>
@@ -357,7 +376,7 @@
             <div class="four-column__slider-box--bottom">
               <span>5 Seats, 4 Doors</span>
               <h3>Audi Q7 2020</h3>
-              <span>Configurator</span>
+              <button class="price-popup">configurator</button>
               <ul>
                 <li><i class="fa-solid fa-check"></i> Includes 300 free km</li>
                 <li><i class="fa-solid fa-check"></i> Theft Protection</li>
@@ -450,17 +469,17 @@
         });
 
         document.addEventListener('DOMContentLoaded', function() {
-  const btns = document.querySelectorAll('.btn-rounded');
+          const btns = document.querySelectorAll('.price-popup');
 
-  btns.forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      const parent = this.closest('.four-column__slider-box');
-      const popup = parent.querySelector('.four-column__slider-box--popup');
+          btns.forEach(function(btn) {
+            btn.addEventListener('click', function() {
+              const parent = this.closest('.four-column__slider-box');
+              const popup = parent.querySelector('.four-column__slider-box--popup');
 
-      popup.classList.add('four-column__slider-box--popup__active');
-      document.body.classList.add('body-overflow');
-    });
-  });
+              popup.classList.add('four-column__slider-box--popup__active');
+              document.body.classList.add('body-overflow');
+            });
+          });
 
   const closeBtns = document.querySelectorAll('.slider-box--popup__close');
 

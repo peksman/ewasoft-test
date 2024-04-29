@@ -28,6 +28,12 @@
         justify-content: center;
         margin-bottom: 35px;
 
+        @include lg-1199 {
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            padding: 0 10px;
+        }
+
         button {
             background-color: transparent;
             padding: 15px 20px;
@@ -37,6 +43,14 @@
             font-family: $main-font;
             font-size: 18px;
             margin: 0 5px;
+
+            @include lg-1199 {
+                padding: 10px;
+                font-size: 16px;
+                border: 1px solid $silver-light;
+                border-radius: 2px;
+                margin: 0 5px 5px;
+            }
 
             &::after {
                 content: '';
@@ -48,6 +62,10 @@
                 left: 50%;
                 right: 50%;
                 transition: $dur $ease;
+
+                @include lg-1199 {
+                    display: none;
+                }
             }
 
             &:hover {
@@ -128,6 +146,14 @@
                 font-family: $main-font;
                 font-size: 20px;
                 font-weight: 700;
+            }
+
+            .price-popup {
+                background-color: transparent;
+                color: $blue;
+                margin-bottom: 30px;
+                font-family: $main-font;
+                border: none;
             }
 
             ul {
