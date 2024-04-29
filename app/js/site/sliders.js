@@ -4,7 +4,7 @@ export function initSlider() {
             slislidesToShow: 1,
             slidesToScroll: 1,
             autoplay: false,
-            autoplaySpeed: 2000,
+            infinite: false,
             arrows: true,
             dots: false,
             prevArrow: $('.custom-prev-arrow'),

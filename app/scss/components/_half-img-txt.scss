@@ -38,7 +38,7 @@
             content: '';
             width: 360px;
             height: 100%;
-            background-color: $gray;
+            background-color: $silver;
             position: absolute;
             left: 50%;
             top: 0;
@@ -83,7 +83,7 @@
                 left: 50%;
                 transform: translateX(-50%);
                 z-index: 11;
-                color: $silver-light;
+                color: rgba($white, 0.5);
 
                 @include md-991 {
                     color: $silver-light;
@@ -129,6 +129,7 @@
                     font-family: $main-font;
                     margin-bottom: 20px;
                     line-height: 30px;
+                    color: $silver;
 
                     @include sm-767 {
                         font-size: 18px;
@@ -141,6 +142,7 @@
                     font-size: 16px;
                     line-height: 25px;
                     font-family: $main-font;
+                    color: $silver-01;
                 }
 
                 @include md-991 {

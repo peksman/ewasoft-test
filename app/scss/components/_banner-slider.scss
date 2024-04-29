@@ -34,7 +34,6 @@
         transform: translateY(-50%);
         display: flex;
         justify-content: space-between;
-        flex-direction: row-reverse;
 
         @include sm-767 {
             align-items: flex-end;
@@ -75,6 +74,15 @@
             }
 
             &:first-of-type {
+                border-top-right-radius: 3px;
+                border-bottom-right-radius: 3px;
+
+                @include sm-767 {
+                    border-radius: 0;
+                }
+            }
+
+            &:last-of-type {
                 border-top-left-radius: 3px;
                 border-bottom-left-radius: 3px;
 
@@ -83,12 +91,19 @@
                 }
             }
 
-            &:last-of-type {
-                border-top-right-radius: 3px;
-                border-bottom-right-radius: 3px;
+            &.slick-disabled {
+                opacity: 0.25;
+                cursor: not-allowed;
 
-                @include sm-767 {
-                    border-radius: 0;
+                &:hover {
+                    cursor: not-allowed;
+                    opacity: 0.25;
+                    background-color: rgba($white, 0.25);
+
+
+                    i {
+                        color: $white;
+                    }
                 }
             }
         }

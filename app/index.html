@@ -85,13 +85,24 @@
           </div>
           </div>
         </div>
+        <div class="banner-slider__box" style="background-image: url(images/images/header-img-1920.jpg);">
+          <div class="container">
+            <div class="banner-slider__content">
+              <h1 class="page-title">
+                <span>New arrival</span>
+                Expectations put limitations on possibilities.
+              </h1>
+              <p>The Audi Q8 offers a unique performance that blends sport and utility into a momentous SUV design.</p>
+          </div>
+          </div>
+        </div>
       </div>
       <div class="banner-slider__arrows">
         <span class="custom-prev-arrow">
-          <i class="fa-solid fa-angle-right"></i>
+          <i class="fa-solid fa-angle-left"></i>
         </span>
         <span class="custom-next-arrow">
-          <i class="fa-solid fa-angle-left"></i>
+          <i class="fa-solid fa-angle-right"></i>
         </span>
       </div>
     </section>
@@ -149,15 +160,15 @@
       <div class="container">
         <h2 class="section-title section-title__centered">You might take a look...</h2>
         <div class="four-column-filter__box">
-          <button>All</button>
-          <button>Hatchback</button>
-          <button>Sportback</button>
-          <button>Limousine</button>
-          <button>SUV</button>
-          <button>Cabrio</button>
+          <button data-li="all" class="active">All</button>
+          <button data-li="hatchback">Hatchback</button>
+          <button data-li="sportback">Sportback</button>
+          <button data-li="limousine">Limousine</button>
+          <button data-li="suv">SUV</button>
+          <button data-li="cabrio">Cabrio</button>
         </div>
         <div class="four-column__slider">
-          <div class="four-column__slider-box">
+          <div data-li="all, hatchback" class="four-column__slider-box">
             <div class="four-column__slider-box--top">
               <img src="images/products/product-card-audi-q3.png" alt="">
             </div>
@@ -173,7 +184,7 @@
               <div class="four-column__slider-box--bottom_price">
                 <div class="bottom_price__left">
                   <span>Starting from</span>
-                  <span>29.999 &euro;</span>
+                  <span class="calculate-price-front">29.999 &euro;</span>
                 </div>
                 <div class="bottom_price__right">
                   <button class="btn-rounded">Buy Now</button>
@@ -183,15 +194,14 @@
             <div class="four-column__slider-box--popup">
               <div class="slider-box--popup__left">
                 <div class="slider-box--popup__left-img">
-                  <span class="slider-box--popup__left-notice">new</span>
                   <img src="images/products/product-card-audi-q3.png" alt="">
                 </div>
                 <span class="slider-box--popup__left-info">5 Seats, 4 doors</span>
                 <h4>Audi Q7 2020</h4>
-                <a href="javascript:;">
-                  Starting from
-                  <span class="calculate-price">39.999</span>
-                </a>
+                <div class="calculate-price__wrapper">
+                  <span>Starting from</span>
+                  <span class="calculate-price">29.999</span>
+                </div>
               </div>
               <div class="slider-box--popup__right">
                 <h5>Audi Configurator</h5>
@@ -227,7 +237,7 @@
               <span class="slider-box--popup__close"></span>
             </div>
           </div>
-          <div class="four-column__slider-box">
+          <div data-li="all, sportback" class="four-column__slider-box">
             <div class="four-column__slider-box--top">
               <img src="images/products/product-card-audi-a4.png" alt="">
             </div>
@@ -243,7 +253,7 @@
               <div class="four-column__slider-box--bottom_price">
                 <div class="bottom_price__left">
                   <span>Starting from</span>
-                  <span>29.999 &euro;</span>
+                  <span class="calculate-price-front">24.999 &euro;</span>
                 </div>
                 <div class="bottom_price__right">
                   <button class="btn-rounded">Buy Now</button>
@@ -253,15 +263,14 @@
             <div class="four-column__slider-box--popup">
               <div class="slider-box--popup__left">
                 <div class="slider-box--popup__left-img">
-                  <span class="slider-box--popup__left-notice">new</span>
                   <img src="images/products/product-card-audi-a4.png" alt="">
                 </div>
                 <span class="slider-box--popup__left-info">5 Seats, 4 doors</span>
                 <h4>Audi Q7 2020</h4>
-                <a href="javascript:;">
-                  Starting from
-                  <span class="calculate-price">39.999</span>
-                </a>
+                <div class="calculate-price__wrapper">
+                  <span>Starting from</span>
+                  <span class="calculate-price">24.999</span>
+                </div>
               </div>
               <div class="slider-box--popup__right">
                 <h5>Audi Configurator</h5>
@@ -297,7 +306,7 @@
               <span class="slider-box--popup__close"></span>
             </div>
           </div>
-          <div class="four-column__slider-box">
+          <div data-li="all, limousine, suv" class="four-column__slider-box">
             <div class="four-column__slider-box--top">
               <span>new</span>
               <img src="images/products/product-card-audi-a3.png" alt="">
@@ -314,7 +323,7 @@
               <div class="four-column__slider-box--bottom_price">
                 <div class="bottom_price__left">
                   <span>Starting from</span>
-                  <span>29.999 &euro;</span>
+                  <span class="calculate-price-front">19.999 &euro;</span>
                 </div>
                 <div class="bottom_price__right">
                   <button class="btn-rounded">Buy Now</button>
@@ -329,10 +338,10 @@
                 </div>
                 <span class="slider-box--popup__left-info">5 Seats, 4 doors</span>
                 <h4>Audi Q7 2020</h4>
-                <a href="javascript:;">
-                  Starting from
-                  <span class="calculate-price">39.999</span>
-                </a>
+                <div class="calculate-price__wrapper">
+                  <span>Starting from</span>
+                  <span class="calculate-price">19.999</span>
+                </div>
               </div>
               <div class="slider-box--popup__right">
                 <h5>Audi Configurator</h5>
@@ -368,7 +377,7 @@
               <span class="slider-box--popup__close"></span>
             </div>
           </div>
-          <div class="four-column__slider-box">
+          <div data-li="all, cabrio" class="four-column__slider-box">
             <div class="four-column__slider-box--top">
               <span>new</span>
               <img src="images/products/product-card-audi-q7.png" alt="">
@@ -385,7 +394,7 @@
               <div class="four-column__slider-box--bottom_price">
                 <div class="bottom_price__left">
                   <span>Starting from</span>
-                  <span>29.999 &euro;</span>
+                  <span class="calculate-price-front">39.999 &euro;</span>
                 </div>
                 <div class="bottom_price__right">
                   <button class="btn-rounded">Buy Now</button>
@@ -400,10 +409,10 @@
                 </div>
                 <span class="slider-box--popup__left-info">5 Seats, 4 doors</span>
                 <h4>Audi Q7 2020</h4>
-                <a href="javascript:;">
-                  Starting from
+                <div class="calculate-price__wrapper">
+                  <span>Starting from</span>
                   <span class="calculate-price">39.999</span>
-                </a>
+                </div>
               </div>
               <div class="slider-box--popup__right">
                 <h5>Audi Configurator</h5>
@@ -442,59 +451,6 @@
         </div>
       </div>
     </section>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const checkboxes = document.querySelectorAll('.popup__right-list--box input[type="checkbox"]');
-            const calculatePrice = document.querySelector('.calculate-price');
-
-            function formatNumber(number) {
-                return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
-            }
-
-            checkboxes.forEach(function (checkbox) {
-                checkbox.addEventListener('change', function () {
-                    const span = this.parentElement.querySelector('.calculate-price--value');
-                    let price = parseFloat(span.textContent.replace(',', '.'));
-                    let total = parseFloat(calculatePrice.textContent.replace('.', '').replace(',', ''));
-
-                    if (this.checked) {
-                        total += price;
-                    } else {
-                        total -= price;
-                    }
-
-                    calculatePrice.textContent = formatNumber(total.toFixed(2));
-                });
-            });
-        });
-
-        document.addEventListener('DOMContentLoaded', function() {
-          const btns = document.querySelectorAll('.price-popup');
-
-          btns.forEach(function(btn) {
-            btn.addEventListener('click', function() {
-              const parent = this.closest('.four-column__slider-box');
-              const popup = parent.querySelector('.four-column__slider-box--popup');
-
-              popup.classList.add('four-column__slider-box--popup__active');
-              document.body.classList.add('body-overflow');
-            });
-          });
-
-  const closeBtns = document.querySelectorAll('.slider-box--popup__close');
-
-  closeBtns.forEach(function(closeBtn) {
-    closeBtn.addEventListener('click', function() {
-      const parent = this.closest('.four-column__slider-box');
-      const popup = parent.querySelector('.four-column__slider-box--popup');
-
-      popup.classList.remove('four-column__slider-box--popup__active');
-      document.body.classList.remove('body-overflow');
-    });
-  });
-});
-
-    </script>
     <!-- Section Products End -->
   </main>
   <!-- End of Site Main Content -->

@@ -113,6 +113,7 @@
                 text-transform: uppercase;
                 letter-spacing: 2px;
                 padding: 2px 4px;
+                color: $silver-05;
 
                 &__active {
                     top: 8px;
@@ -130,7 +131,7 @@
         input {
             border: 1px solid $white;
             border-radius: 3px;
-            background-color: rgba($white, 0.5);
+            background-color: rgba($white, 0.25);
             height: 58px;
             box-sizing: border-box;
             width: 100%;
@@ -152,7 +153,7 @@
             resize: none;
             border: 1px solid $white;
             border-radius: 3px;
-            background-color: rgba($white, 0.5);
+            background-color: rgba($white, 0.25);
             height: 148px;
             box-sizing: border-box;
             width: 100%;
