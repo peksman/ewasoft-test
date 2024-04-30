@@ -1,3 +1,85 @@
 .entry-content {
     padding: 100px 0;
+    font-family: $main-font;
+    color: $silver;
+
+    @include lg-1199 {
+        padding: 75px 15px;
+    }
+
+    @include sm-767 {
+        padding: 50px 15px;
+        background-color: $silver-ultra-light;
+    }
+
+    h1 {
+        font-size: 39px;
+        line-height: 49px;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 34px;
+        line-height: 44px;
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+
+    h4 {
+        font-size: 24px;
+        line-height: 34px;
+        margin-bottom: 15px;
+    }
+
+    h5 {
+        font-size: 20px;
+        line-height: 20px;
+        margin-bottom: 15px;
+    }
+
+    h5 {
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 15px;
+
+        a {
+            color: $red;
+        }
+    }
+
+    a {
+        color: $blue;
+        display: inline-block;
+        margin-bottom: 15px;
+
+        &:hover {
+            color: $red;
+        }
+    }
+
+    blockquote {
+        border: 5px solid $silver;
+        padding: 20px;
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 25px;
+    }
+
+    img {
+        margin: 50px auto;
+        max-width: 80%;
+        width: 100%;
+        display: block;
+    }
 }

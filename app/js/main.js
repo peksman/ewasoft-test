@@ -5,6 +5,8 @@ import { initPriceCalculate } from './site/priceCalculate.js';
 import { initProductPopup } from './site/productPopup.js';
 import { initHamburger } from './site/hamburger.js';
 import { initTabs } from './site/tabs.js';
+import { initFormPopup } from './site/contactForm.js';
+import { initAos } from './site/aos.js';
 
 document.addEventListener('DOMContentLoaded', function () {
   
@@ -14,5 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
   initProductPopup();
   initHamburger();
   initTabs();
+  initFormPopup();
+  initAos();
 
 });

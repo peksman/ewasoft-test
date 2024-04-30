@@ -126,6 +126,13 @@
                     color: $red;
                 }
             }
+
+            &-submit {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
         }
 
         input {
@@ -295,12 +302,17 @@
 
             @include sm-767 {
                 margin-bottom: 5px;
+                padding-left: 0;
             }
         }
 
         &-right {
             @include lg-1199 {
                 padding-right: 15px;
+            }
+
+            @include sm-767 {
+                padding-right: 0;
             }
 
             ul {   

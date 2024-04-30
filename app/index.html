@@ -5,12 +5,12 @@
   <link rel="stylesheet" href="css/style.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <title>Ewasoft FE Test</title>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
   </style>
@@ -21,7 +21,7 @@
   <header class="site-header" id="site-header">
     <div class="flex--between">
       <div class="site-header__left">
-        <a href="javascript:;">
+        <a href="index.html">
           <img src="images/logo/Audi-Logo_2016@2x.png" alt="">
         </a>
       </div>
@@ -32,7 +32,10 @@
           </li>
           <li class="menu-item__has-children">
             <a href="javascript:;">About Us</a>
-            <ul>
+            <span class="submenu--opener">
+              <i class="fa-solid fa-chevron-down"></i>
+            </span>
+            <ul class="submenu">
               <li>
                 <a href="javscript:;">Our Team</a>
               </li>
@@ -66,33 +69,33 @@
         <div class="banner-slider__box" style="background-image: url(images/images/header-img-1920.jpg);">
           <div class="container">
             <div class="banner-slider__content">
-              <h1 class="page-title">
+              <h1 class="page-title" data-aos="fade-up" data-aos-delay="200">
                 <span>New arrival</span>
                 Expectations put limitations on possibilities.
               </h1>
-              <p>The Audi Q8 offers a unique performance that blends sport and utility into a momentous SUV design.</p>
+              <p data-aos="fade-up" data-aos-delay="400">The Audi Q8 offers a unique performance that blends sport and utility into a momentous SUV design.</p>
           </div>
           </div>
         </div>
         <div class="banner-slider__box" style="background-image: url(images/images/header-img-1920.jpg);">
           <div class="container">
             <div class="banner-slider__content">
-              <h1 class="page-title">
+              <h1 class="page-title" data-aos="fade-up" data-aos-delay="200">
                 <span>New arrival</span>
                 Expectations put limitations on possibilities.
               </h1>
-              <p>The Audi Q8 offers a unique performance that blends sport and utility into a momentous SUV design.</p>
+              <p data-aos="fade-up" data-aos-delay="400">The Audi Q8 offers a unique performance that blends sport and utility into a momentous SUV design.</p>
           </div>
           </div>
         </div>
         <div class="banner-slider__box" style="background-image: url(images/images/header-img-1920.jpg);">
           <div class="container">
             <div class="banner-slider__content">
-              <h1 class="page-title">
+              <h1 class="page-title" data-aos="fade-up" data-aos-delay="200">
                 <span>New arrival</span>
                 Expectations put limitations on possibilities.
               </h1>
-              <p>The Audi Q8 offers a unique performance that blends sport and utility into a momentous SUV design.</p>
+              <p data-aos="fade-up" data-aos-delay="400">The Audi Q8 offers a unique performance that blends sport and utility into a momentous SUV design.</p>
           </div>
           </div>
         </div>
@@ -112,16 +115,16 @@
       <div class="container">
         <div class="flex">
           <div class="flex--half">
-            <img src="images/images/about-us-section.png" alt="">
-            <p>A progressive design, a powerful engine.</p>
+            <img src="images/images/about-us-section.png" alt="" data-aos="fade-right" data-aos-delay="300">
+            <p data-aos="fade-up" data-aos-delay="600">A progressive design, a powerful engine.</p>
           </div>
           <div class="flex--half">
-            <h2 class="section-title">
-              <span>About Q8</span>
+            <h2 class="section-title" data-aos="fade-up" data-aos-delay="600">
+              <span data-aos="fade-up" data-aos-delay="300">About Q8</span>
               Welcome to the 8th dimension. The new Audi Q8
             </h2>
-            <p>With its imposing Singleframe in octagonal design, the Audi Q8 presents the new face of the Q family.</p>
-            <p>The radiator grille combines with the forward-mounted spoiler and the strongly contoured air inlets to underline its confident look.</p>
+            <p data-aos="fade-up" data-aos-delay="900">With its imposing Singleframe in octagonal design, the Audi Q8 presents the new face of the Q family.</p>
+            <p data-aos="fade-up" data-aos-delay="1200">The radiator grille combines with the forward-mounted spoiler and the strongly contoured air inlets to underline its confident look.</p>
           </div>
         </div>
       </div>
@@ -130,23 +133,23 @@
     <!-- Section Banner Img Start -->
     <section class="banner-img" style="background-image: url(images/images/section-banner-1920.jpg);">
       <div class="container">
-        <h2 class="section-title section-title__white">
+        <h2 class="section-title section-title__white" data-aos="fade-up" data-aos-delay="600">
           <span>Featured</span>
           Brand new The Audi RSQ8
         </h2>
-        <p>The RS Q8 gives you the choice: depending on the selected equipment, look are even bolder and sportier to suit your personal ambitions.</p>
+        <p data-aos="fade-up" data-aos-delay="900">The RS Q8 gives you the choice: depending on the selected equipment, look are even bolder and sportier to suit your personal ambitions.</p>
         <div class="banner-img__counter">
-          <div class="banner-img__counter-box">
+          <div class="banner-img__counter-box" data-aos="fade-up" data-aos-delay="1200">
             <h3>Power output</h3>
             <p>441 kw</p>
             <span>(600 hp)</span>
           </div>
-          <div class="banner-img__counter-box">
+          <div class="banner-img__counter-box" data-aos="fade-up" data-aos-delay="1400">
             <h3>Acceleration</h3>
             <p>3.8</p>
             <span>seconds</span>
           </div>
-          <div class="banner-img__counter-box">
+          <div class="banner-img__counter-box" data-aos="fade-up" data-aos-delay="1600">
             <h3>Torque</h3>
             <p>800</p>
             <span>Nm</span>
@@ -158,35 +161,35 @@
     <!-- Section Products Start -->
     <section class="four-column">
       <div class="container">
-        <h2 class="section-title section-title__centered">You might take a look...</h2>
+        <h2 class="section-title section-title__centered" data-aos="fade-up" data-aos-delay="200">You might take a look...</h2>
         <div class="four-column-filter__box">
-          <button data-li="all" class="active">All</button>
-          <button data-li="hatchback">Hatchback</button>
-          <button data-li="sportback">Sportback</button>
-          <button data-li="limousine">Limousine</button>
-          <button data-li="suv">SUV</button>
-          <button data-li="cabrio">Cabrio</button>
+          <button data-li="all" class="active" data-aos="fade-up" data-aos-delay="300">All</button>
+          <button data-li="hatchback" data-aos="fade-up" data-aos-delay="400">Hatchback</button>
+          <button data-li="sportback" data-aos="fade-up" data-aos-delay="500">Sportback</button>
+          <button data-li="limousine" data-aos="fade-up" data-aos-delay="600">Limousine</button>
+          <button data-li="suv" data-aos="fade-up" data-aos-delay="700">SUV</button>
+          <button data-li="cabrio" data-aos="fade-up" data-aos-delay="800">Cabrio</button>
         </div>
         <div class="four-column__slider">
           <div data-li="all, hatchback" class="four-column__slider-box">
-            <div class="four-column__slider-box--top">
+            <div class="four-column__slider-box--top" data-aos="fade-up" data-aos-delay="200">
               <img src="images/products/product-card-audi-q3.png" alt="">
             </div>
-            <div class="four-column__slider-box--bottom">
-              <span>5 Seats, 4 Doors</span>
-              <h3>Audi Q3 2020</h3>
-              <button class="price-popup">configurator</button>
+            <div class="four-column__slider-box--bottom" data-aos="fade-up" data-aos-delay="400">
+              <span data-aos="fade-up" data-aos-delay="500">5 Seats, 4 Doors</span>
+              <h3 data-aos="fade-up" data-aos-delay="600">Audi Q3 2020</h3>
+              <button class="price-popup" data-aos="fade-up" data-aos-delay="700">configurator</button>
               <ul>
-                <li><i class="fa-solid fa-check"></i>Includes 300 free km</li>
-                <li><i class="fa-solid fa-check"></i>Theft Protection</li>
-                <li><i class="fa-solid fa-check"></i>Non Refundable</li>
+                <li data-aos="fade-up" data-aos-delay="800"><i class="fa-solid fa-check"></i>Includes 300 free km</li>
+                <li data-aos="fade-up" data-aos-delay="900"><i class="fa-solid fa-check"></i>Theft Protection</li>
+                <li data-aos="fade-up" data-aos-delay="1000"><i class="fa-solid fa-check"></i>Non Refundable</li>
               </ul>
               <div class="four-column__slider-box--bottom_price">
                 <div class="bottom_price__left">
-                  <span>Starting from</span>
-                  <span class="calculate-price-front">29.999 &euro;</span>
+                  <span data-aos="fade-up" data-aos-delay="1100">Starting from</span>
+                  <span class="calculate-price-front" data-aos="fade-up" data-aos-delay="1200">29.999 &euro;</span>
                 </div>
-                <div class="bottom_price__right">
+                <div class="bottom_price__right" data-aos="fade-up" data-aos-delay="1300">
                   <button class="btn-rounded">Buy Now</button>
                 </div>
               </div>
@@ -208,28 +211,28 @@
                 <p>Create your own audi.</p>
                 <div class="popup__right-list">
                   <div class="popup__right-list--box">  
-                    <input type="checkbox" name="checkbox"/>
+                    <input type="checkbox" name="checkbox">
                     <p>48-V electrical system</p>
                     <span class="calculate-price--value">0</span>
                   </div>
                   <div class="popup__right-list--box">
-                    <input type="checkbox" name="checkbox" />
-                    <p>48-V electrical system</p>
+                    <input type="checkbox" name="checkbox">
+                    <p>Adaptive air suspension - sport</p>
                     <span class="calculate-price--value">278,60</span>
                   </div>
                   <div class="popup__right-list--box">
-                    <input type="checkbox" name="checkbox" />
-                    <p>48-V electrical system</p>
+                    <input type="checkbox" name="checkbox">
+                    <p>Acoustic side windows - optional</p>
                     <span class="calculate-price--value">558,78</span>
                   </div>
                   <div class="popup__right-list--box">
-                    <input type="checkbox" name="checkbox" />
-                    <p>48-V electrical system</p>
+                    <input type="checkbox" name="checkbox">
+                    <p>Acoustic and heat-insulating glass</p>
                     <span class="calculate-price--value">357,29</span>
                   </div>
                   <div class="popup__right-list--box">
-                    <input type="checkbox" name="checkbox" />
-                    <p>48-V electrical system</p>
+                    <input type="checkbox" name="checkbox">
+                    <p>Ambiental LED</p>
                     <span class="calculate-price--value">637,48</span>
                   </div>
                 </div>
@@ -238,24 +241,24 @@
             </div>
           </div>
           <div data-li="all, sportback" class="four-column__slider-box">
-            <div class="four-column__slider-box--top">
+            <div class="four-column__slider-box--top" data-aos="fade-up" data-aos-delay="200">
               <img src="images/products/product-card-audi-a4.png" alt="">
             </div>
-            <div class="four-column__slider-box--bottom">
-              <span>5 Seats, 4 Doors</span>
-              <h3>Audi A4 2020</h3>
-              <button class="price-popup">configurator</button>
+            <div class="four-column__slider-box--bottom" data-aos="fade-up" data-aos-delay="400">
+              <span data-aos="fade-up" data-aos-delay="500">5 Seats, 4 Doors</span>
+              <h3 data-aos="fade-up" data-aos-delay="600">Audi A4 2020</h3>
+              <button class="price-popup" data-aos="fade-up" data-aos-delay="700">configurator</button>
               <ul>
-                <li><i class="fa-solid fa-check"></i>Includes 300 free km</li>
-                <li><i class="fa-solid fa-check"></i>Theft Protection</li>
-                <li><i class="fa-solid fa-check"></i>Non Refundable</li>
+                <li data-aos="fade-up" data-aos-delay="800"><i class="fa-solid fa-check"></i>Includes 300 free km</li>
+                <li data-aos="fade-up" data-aos-delay="900"><i class="fa-solid fa-check"></i>Theft Protection</li>
+                <li data-aos="fade-up" data-aos-delay="1000"><i class="fa-solid fa-check"></i>Non Refundable</li>
               </ul>
               <div class="four-column__slider-box--bottom_price">
                 <div class="bottom_price__left">
-                  <span>Starting from</span>
-                  <span class="calculate-price-front">24.999 &euro;</span>
+                  <span data-aos="fade-up" data-aos-delay="1100">Starting from</span>
+                  <span class="calculate-price-front" data-aos="fade-up" data-aos-delay="1200">24.999 &euro;</span>
                 </div>
-                <div class="bottom_price__right">
+                <div class="bottom_price__right" data-aos="fade-up" data-aos-delay="1300">
                   <button class="btn-rounded">Buy Now</button>
                 </div>
               </div>
@@ -277,28 +280,28 @@
                 <p>Create your own audi.</p>
                 <div class="popup__right-list">
                   <div class="popup__right-list--box">  
-                    <input type="checkbox" name="checkbox"/>
+                    <input type="checkbox" name="checkbox">
                     <p>48-V electrical system</p>
                     <span class="calculate-price--value">0</span>
                   </div>
                   <div class="popup__right-list--box">
-                    <input type="checkbox" name="checkbox" />
-                    <p>48-V electrical system</p>
+                    <input type="checkbox" name="checkbox">
+                    <p>Adaptive air suspension - sport</p>
                     <span class="calculate-price--value">278,60</span>
                   </div>
                   <div class="popup__right-list--box">
-                    <input type="checkbox" name="checkbox" />
-                    <p>48-V electrical system</p>
+                    <input type="checkbox" name="checkbox">
+                    <p>Acoustic side windows - optional</p>
                     <span class="calculate-price--value">558,78</span>
                   </div>
                   <div class="popup__right-list--box">
-                    <input type="checkbox" name="checkbox" />
-                    <p>48-V electrical system</p>
+                    <input type="checkbox" name="checkbox">
+                    <p>Acoustic and heat-insulating glass</p>
                     <span class="calculate-price--value">357,29</span>
                   </div>
                   <div class="popup__right-list--box">
-                    <input type="checkbox" name="checkbox" />
-                    <p>48-V electrical system</p>
+                    <input type="checkbox" name="checkbox">
+                    <p>Ambiental LED</p>
                     <span class="calculate-price--value">637,48</span>
                   </div>
                 </div>
@@ -307,25 +310,25 @@
             </div>
           </div>
           <div data-li="all, limousine, suv" class="four-column__slider-box">
-            <div class="four-column__slider-box--top">
-              <span>new</span>
+            <div class="four-column__slider-box--top" data-aos="fade-up" data-aos-delay="200">
+              <span data-aos="fade-up" data-aos-delay="100">new</span>
               <img src="images/products/product-card-audi-a3.png" alt="">
             </div>
-            <div class="four-column__slider-box--bottom">
-              <span>5 Seats, 4 Doors</span>
-              <h3>Audi A3 2020</h3>
-              <button class="price-popup">configurator</button>
+            <div class="four-column__slider-box--bottom" data-aos="fade-up" data-aos-delay="400">
+              <span data-aos="fade-up" data-aos-delay="500">5 Seats, 4 Doors</span>
+              <h3 data-aos="fade-up" data-aos-delay="600">Audi A3 2020</h3>
+              <button class="price-popup" data-aos="fade-up" data-aos-delay="700">configurator</button>
               <ul>
-                <li><i class="fa-solid fa-check"></i>Includes 300 free km</li>
-                <li><i class="fa-solid fa-check"></i>Theft Protection</li>
-                <li><i class="fa-solid fa-check"></i>Non Refundable</li>
+                <li data-aos="fade-up" data-aos-delay="800"><i class="fa-solid fa-check"></i>Includes 300 free km</li>
+                <li data-aos="fade-up" data-aos-delay="900"><i class="fa-solid fa-check"></i>Theft Protection</li>
+                <li data-aos="fade-up" data-aos-delay="1000"><i class="fa-solid fa-check"></i>Non Refundable</li>
               </ul>
               <div class="four-column__slider-box--bottom_price">
                 <div class="bottom_price__left">
-                  <span>Starting from</span>
-                  <span class="calculate-price-front">19.999 &euro;</span>
+                  <span data-aos="fade-up" data-aos-delay="1100">Starting from</span>
+                  <span class="calculate-price-front" data-aos="fade-up" data-aos-delay="1200">19.999 &euro;</span>
                 </div>
-                <div class="bottom_price__right">
+                <div class="bottom_price__right" data-aos="fade-up" data-aos-delay="1300">
                   <button class="btn-rounded">Buy Now</button>
                 </div>
               </div>
@@ -348,28 +351,28 @@
                 <p>Create your own audi.</p>
                 <div class="popup__right-list">
                   <div class="popup__right-list--box">  
-                    <input type="checkbox" name="checkbox"/>
+                    <input type="checkbox" name="checkbox">
                     <p>48-V electrical system</p>
                     <span class="calculate-price--value">0</span>
                   </div>
                   <div class="popup__right-list--box">
-                    <input type="checkbox" name="checkbox" />
-                    <p>48-V electrical system</p>
+                    <input type="checkbox" name="checkbox">
+                    <p>Adaptive air suspension - sport</p>
                     <span class="calculate-price--value">278,60</span>
                   </div>
                   <div class="popup__right-list--box">
-                    <input type="checkbox" name="checkbox" />
-                    <p>48-V electrical system</p>
+                    <input type="checkbox" name="checkbox">
+                    <p>Acoustic side windows - optional</p>
                     <span class="calculate-price--value">558,78</span>
                   </div>
                   <div class="popup__right-list--box">
-                    <input type="checkbox" name="checkbox" />
-                    <p>48-V electrical system</p>
+                    <input type="checkbox" name="checkbox">
+                    <p>Acoustic and heat-insulating glass</p>
                     <span class="calculate-price--value">357,29</span>
                   </div>
                   <div class="popup__right-list--box">
-                    <input type="checkbox" name="checkbox" />
-                    <p>48-V electrical system</p>
+                    <input type="checkbox" name="checkbox">
+                    <p>Ambiental LED</p>
                     <span class="calculate-price--value">637,48</span>
                   </div>
                 </div>
@@ -378,25 +381,25 @@
             </div>
           </div>
           <div data-li="all, cabrio" class="four-column__slider-box">
-            <div class="four-column__slider-box--top">
-              <span>new</span>
+            <div class="four-column__slider-box--top" data-aos="fade-up" data-aos-delay="200">
+              <span data-aos="fade-up" data-aos-delay="100">new</span>
               <img src="images/products/product-card-audi-q7.png" alt="">
             </div>
-            <div class="four-column__slider-box--bottom">
-              <span>5 Seats, 4 Doors</span>
-              <h3>Audi Q7 2020</h3>
-              <button class="price-popup">configurator</button>
+            <div class="four-column__slider-box--bottom" data-aos="fade-up" data-aos-delay="400">
+              <span data-aos="fade-up" data-aos-delay="500">5 Seats, 4 Doors</span>
+              <h3 data-aos="fade-up" data-aos-delay="600">Audi Q7 2020</h3>
+              <button class="price-popup" data-aos="fade-up" data-aos-delay="700">configurator</button>
               <ul>
-                <li><i class="fa-solid fa-check"></i> Includes 300 free km</li>
-                <li><i class="fa-solid fa-check"></i> Theft Protection</li>
-                <li><i class="fa-solid fa-check"></i> Non Refundable</li>
+                <li data-aos="fade-up" data-aos-delay="800"><i class="fa-solid fa-check"></i> Includes 300 free km</li>
+                <li data-aos="fade-up" data-aos-delay="900"><i class="fa-solid fa-check"></i> Theft Protection</li>
+                <li data-aos="fade-up" data-aos-delay="1000"><i class="fa-solid fa-check"></i> Non Refundable</li>
               </ul>
               <div class="four-column__slider-box--bottom_price">
                 <div class="bottom_price__left">
-                  <span>Starting from</span>
-                  <span class="calculate-price-front">39.999 &euro;</span>
+                  <span data-aos="fade-up" data-aos-delay="1100">Starting from</span>
+                  <span class="calculate-price-front" data-aos="fade-up" data-aos-delay="1200">39.999 &euro;</span>
                 </div>
-                <div class="bottom_price__right">
+                <div class="bottom_price__right" data-aos="fade-up" data-aos-delay="1300">
                   <button class="btn-rounded">Buy Now</button>
                 </div>
               </div>
@@ -419,28 +422,28 @@
                 <p>Create your own audi.</p>
                 <div class="popup__right-list">
                   <div class="popup__right-list--box">  
-                    <input type="checkbox" name="checkbox"/>
+                    <input type="checkbox" name="checkbox">
                     <p>48-V electrical system</p>
                     <span class="calculate-price--value">0</span>
                   </div>
                   <div class="popup__right-list--box">
-                    <input type="checkbox" name="checkbox" />
-                    <p>48-V electrical system</p>
+                    <input type="checkbox" name="checkbox">
+                    <p>Adaptive air suspension - sport</p>
                     <span class="calculate-price--value">278,60</span>
                   </div>
                   <div class="popup__right-list--box">
-                    <input type="checkbox" name="checkbox" />
-                    <p>48-V electrical system</p>
+                    <input type="checkbox" name="checkbox">
+                    <p>Acoustic side windows - optional</p>
                     <span class="calculate-price--value">558,78</span>
                   </div>
                   <div class="popup__right-list--box">
-                    <input type="checkbox" name="checkbox" />
-                    <p>48-V electrical system</p>
+                    <input type="checkbox" name="checkbox">
+                    <p>Acoustic and heat-insulating glass</p>
                     <span class="calculate-price--value">357,29</span>
                   </div>
                   <div class="popup__right-list--box">
-                    <input type="checkbox" name="checkbox" />
-                    <p>48-V electrical system</p>
+                    <input type="checkbox" name="checkbox">
+                    <p>Ambiental LED</p>
                     <span class="calculate-price--value">637,48</span>
                   </div>
                 </div>
@@ -456,150 +459,61 @@
   <!-- End of Site Main Content -->
   <!-- Site Footer Start -->
   <footer class="site-footer">
-      <div class="site-footer__top">
-        <div class="contact">
-          <div class="container">
-            <div class="site-footer__img">
-              <img src="images/images/contact-form-img.png" alt="">
-            </div>
-            <div class="contact__left">
-              <h2 class="section-title section-title__white">
-                <span>Contact us</span>
-                If you have any<br> questions, don't<br> hesitate to contact us.
-              </h2>
-            </div>
-            <div class="contact__right">
-              <form action="" class="contact-form" id="contact-form">
-                <div class="contact-form__wrapper">
-                  <input type="text" id="text" placeholder="Your Name">
-                  <label for="text" class="form-label">Enter Your Name <span>*</span></label>
-                  <span class="error-message">This is required field.</span>
-                </div>
-                <div class="contact-form__wrapper">
-                  <input type="email" id="email" placeholder="Your Email">
-                  <label for="email" class="form-label">Enter Your Email <span>*</span></label>
-                  <span class="error-message">This is required field or wrong email format.</span>
-                </div>
-                <div class="contact-form__wrapper">
-                  <textarea id="message" placeholder="Your Message"></textarea>
-                  <label for="message" class="form-label">Your Message <span>*</span></label>
-                  <span class="error-message">This is required field.</span>
-                </div>
+    <div class="site-footer__top">
+      <div class="contact">
+        <div class="container">
+          <div class="site-footer__img" data-aos="fade-right" data-aos-delay="1500">
+            <img src="images/images/contact-form-img.png" alt="">
+          </div>
+          <div class="contact__left">
+            <h2 class="section-title section-title__white" data-aos="fade-up" data-aos-delay="200">
+              <span>Contact us</span>
+              If you have any<br> questions, don't<br> hesitate to contact us.
+            </h2>
+          </div>
+          <div class="contact__right">
+            <form action="test_submit.php" class="contact-form" id="contact-form" data-aos="fade-up" data-aos-delay="300">
+              <div class="contact-form__wrapper" data-aos="fade-up" data-aos-delay="400">
+                <input type="text" id="text" placeholder="Your Name">
+                <label for="text" class="form-label">Enter Your Name <span>*</span></label>
+                <span class="error-message">This is required field.</span>
+              </div>
+              <div class="contact-form__wrapper" data-aos="fade-up" data-aos-delay="500">
+                <input type="email" id="email" placeholder="Your Email">
+                <label for="email" class="form-label">Enter Your Email <span>*</span></label>
+                <span class="error-message">This is required field or wrong email format.</span>
+              </div>
+              <div class="contact-form__wrapper" data-aos="fade-up" data-aos-delay="600">
+                <textarea id="message" placeholder="Your Message"></textarea>
+                <label for="message" class="form-label">Your Message <span>*</span></label>
+                <span class="error-message">This is required field.</span>
+              </div>
+              <div class="contact-form__wrapper-submit" data-aos="fade-up" data-aos-delay="700">
                 <button class="btn-main btn-main__transparent" type="submit">Submit</button>
-                <div class="contact-form__popup">
-                  <p>Thank you for your message. It has been sent.</p>
-                </div>
-              </form>
-              <script>
-                document.addEventListener('DOMContentLoaded', function() {
-                  var form = document.querySelector('.contact-form');
-                  var submitButton = form.querySelector('button[type="submit"]');
-                  var popup = document.querySelector('.contact-form__popup');
-
-                  document.getElementById("contact-form").addEventListener("submit", function(event) {
-                      event.preventDefault();
-                  });
-
-                  submitButton.addEventListener('click', function(event) {
-                      var inputs = form.querySelectorAll('input[type="text"], input[type="email"], textarea');
-                      var errorMessages = form.querySelectorAll('.error-message');
-
-                      errorMessages.forEach(function(errorMessage) {
-                          errorMessage.classList.remove('error-message__active');
-                      });
-
-                      var allFieldsValid = true;
-
-                      inputs.forEach(function(input) {
-                          var wrapper = input.parentElement;
-                          var errorMessage = wrapper.querySelector('.error-message');
-
-                          if (input.value.trim() === '') {
-                              errorMessage.classList.add('error-message__active');
-                              allFieldsValid = false;
-                          }
-
-                          if (input.type === 'email' && !isValidEmail(input.value.trim())) {
-                              errorMessage.classList.add('error-message__active');
-                              allFieldsValid = false;
-                          }
-                      });
-
-                      var labels = document.querySelectorAll(".form-label");
-                          
-                      if (allFieldsValid) {
-                          popup.classList.add('success');
-                          document.getElementById("text").value = "";
-                          document.getElementById("email").value = "";
-                          document.getElementById("message").value = "";
-                          labels.forEach(function(label) {
-                            label.classList.remove("form-label__active");
-                        });
-                          setTimeout(function() {
-                              popup.classList.remove('success');
-                          }, 3000);
-                      }
-
-                      var errorsExist = form.querySelector('.error-message__active');
-
-                      if (errorsExist) {
-                          event.preventDefault();
-                      }
-                  });
-
-                  function isValidEmail(email) {
-                      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                      return emailRegex.test(email);
-                  }
-                });
-
-
-                document.addEventListener('DOMContentLoaded', function() {
-                  const inputs = document.querySelectorAll('.contact-form__wrapper input, .contact-form__wrapper textarea');
-
-                  inputs.forEach(input => {
-                      input.addEventListener('blur', function() {
-                          const wrapper = this.parentElement;
-                          const label = wrapper.querySelector('.form-label');
-
-                          if (this.value.trim() !== '') {
-                              label.classList.add('form-label__active');
-                          } else {
-                              label.classList.remove('form-label__active');
-                          }
-                      });
-                  });
-
-                  inputs.forEach(input => {
-                      const wrapper = input.parentElement;
-                      const label = wrapper.querySelector('.form-label');
-
-                      if (input.value.trim() !== '') {
-                          label.classList.add('form-label__active');
-                      }
-                  });
-                });
-              </script>
-            </div>
+              </div>
+              <div class="contact-form__popup">
+                <p>Thank you for your message. It has been sent.</p>
+              </div>
+            </form>
           </div>
         </div>
       </div>
-      <div class="site-footer__bottom">
-        <div class="container">
-          <div class="flex--between">
-            <div class="site-footer__bottom-left">
-              <p>&copy; 2020. FSD. All rights reserved</p>
-            </div>
-            <div class="site-footer__bottom-right">
-              <ul>
-                <li>
-                  <a href="javascript:;">Terms of agreement</a>
-                </li>
-                <li>
-                  <a href="javascript:;">Privacy Policy</a>
-                </li>
-              </ul>
-            </div>
+    </div>
+    <div class="site-footer__bottom">
+      <div class="container">
+        <div class="flex--between">
+          <div class="site-footer__bottom-left">
+            <p>&copy; 2020. FSD. All rights reserved</p>
+          </div>
+          <div class="site-footer__bottom-right">
+            <ul>
+              <li>
+                <a href="privacy.html">Terms of agreement</a>
+              </li>
+              <li>
+                <a href="privacy.html">Privacy Policy</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

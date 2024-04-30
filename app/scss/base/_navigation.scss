@@ -27,6 +27,31 @@
             &::after {
                 display: none;
             }
+
+            .submenu--opener {
+                display: none;
+
+                i {
+                    color: $white;
+                    opacity: 0.5;
+                }
+
+                @include lg-1199 {
+                    display: inline-block;
+                }
+            }
+
+            &.open {
+                .submenu {
+                    height: 100%;
+                    opacity: 1;
+                    visibility: visible;
+                }
+
+                .submenu--opener {
+                    transform: rotate(180deg);
+                }
+            }
         }
 
         &::after {
@@ -78,6 +103,11 @@
                 opacity: 1;
                 visibility: visible;
                 border-top-color: $red;
+
+                @include lg-1199 {
+                    opacity: 1;
+                    visibility: hidden;
+                }
             }
         }
 
@@ -110,6 +140,10 @@
                 font-size: 12px;
                 text-align: left;
 
+                @include lg-1199 {
+                    text-align: center;
+                }
+
                 &::after {
                     display: none;
                 }
@@ -134,12 +168,25 @@
                 position: relative;
                 top: 0;
                 padding: 0;
-                margin-top: 15px;
+                margin-top: 0;
                 text-align: center;
+                opacity: 0;
+                visibility: hidden;
+                height: 0;
+
+                &.submenu--open {
+                    opacity: 1;
+                    visibility: visible;
+                    height: 100%;
+                }
 
                 li {
                     border-bottom: 0;
                     padding-bottom: 0;
+
+                    &:first-of-type {
+                        margin-top: 15px;
+                    }
 
                     a {
                         color: $silver-light;
