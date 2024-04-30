@@ -1,5 +1,4 @@
 export function initPriceCalculate() {
-    
     const checkboxes = document.querySelectorAll('.popup__right-list--box input[type="checkbox"]');
 
     function formatNumber(number) {

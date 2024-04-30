@@ -1,6 +1,4 @@
 export function initFormPopup() {
-    
-    
       var form = document.querySelector('.contact-form');
       var submitButton = form.querySelector('button[type="submit"]');
       var popup = document.querySelector('.contact-form__popup');
@@ -60,8 +58,6 @@ export function initFormPopup() {
           var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
           return emailRegex.test(email);
       }
-    
-
 
       const inputs = document.querySelectorAll('.contact-form__wrapper input, .contact-form__wrapper textarea');
 
@@ -85,6 +81,5 @@ export function initFormPopup() {
           if (input.value.trim() !== '') {
               label.classList.add('form-label__active');
           }
-      });
-    
+      });   
 }
